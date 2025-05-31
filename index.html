@@ -58,8 +58,18 @@
                         Anonymous Sumbission
                     </p>
                     <p class="abstract">
-                        We introduce a biologically-inspired model for encoding speech, leveraging a two-stage framework inspired by the human auditory processing hierarchy. The first stage transforms a raw audio waveform into a time-frequency representation based on the human cochlea, from which we read out discrete units which we denote as <b>cochlear tokens</b>. The second stage learns a simple, yet powerful, autoregressive sequence model over the cochlear tokens.
-                        We demonstrate that our model, <b>AuriStream</b>, learns meaningful representations of phonemes and word identities, and state-of-the-art representations of lexical semantics. In addition,  <b>AuriStream</b> shows competitive performance on a diverse set of downstream speech tasks from the SUPERB benchmark. Complementing AuriStream's strong representational capabilties, we demonstrate its ability to generate continuations of audio at various temporal scales, which can be visualized in a spectrogram space, and decoded back into audio, to provide insights into the model's predictions.
+                        We introduce <b>AuriStream</b>, a biologically inspired model for encoding speech 
+                        via a two-stage framework inspired by the human auditory processing hierarchy. 
+                        The first stage transforms raw audio into a time-frequency representation based 
+                        on the human cochlea, from which we extract discrete <b>cochlear tokens</b>. 
+                        The second stage applies an autoregressive sequence model over the cochlear tokens.
+                        AuriStream learns meaningful phoneme and word representations, and state-of-the-art 
+                        lexical semantics. AuriStream shows competitive performance on diverse downstream SUPERB 
+                        speech tasks. Complementing AuriStream's strong representational capabilities, it 
+                        generates continuations of audio which can be visualized in a spectrogram space and 
+                        decoded back into audio, providing insights into the model's predictions. In summary, 
+                        we present a two-stage framework for speech representation learning to advance the 
+                        development of more human-like models that efficiently handle a range of speech-based tasks.
                     </p>
                     <!-- Using FontAwesome Pro -->
                     <!-- <div>
