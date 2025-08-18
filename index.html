@@ -53,15 +53,8 @@
 
         <section class="content">
 
-            <div class="figure-section fade-in">
-                <h2>Architecture</h2>
-                <figure>
-                    <img src="media/figures/architecture.png" alt="AuriStream Architecture">
-                </figure>
-            </div>
-
             <div class="text-block fade-in">
-                <p>We provide examples of AuriStream (1B) audio generations. For each example, we prompt the model with the first 2.5 seconds of an audio clip from the LbriSpeech or TIMIT test sets (not present in the model's training data), and it generates predictions for the subsequent 2.5 seconds. We provide both the ground truth (GT) continuations below, along with AuriStream's predictions across several random seeds. For analysis purposes, we converted the predictions to audio using a naïve cochleagram inversion, resulting in some audible artifacts (please see Appendix 6 in the paper for details) and generated a video of a speech continuation in the cochleagram space for a given sample. We would like to emphasize that the examples are not cherry picked; they are simply the first random generations obtained under a consecutive series of random seeds.</p>
+                <p>We present examples of AuriStream (1B) audio generations. For each example, we prompt AuriStream with the first 2.5 seconds of an audio clip from the LibriSpeech test set (unseen during training), and it predicts the subsequent 2.5 seconds. For comparison, we provide the ground truth (GT) continuations below along with AuriStream's predictions across several random seeds. The predicted cochleagrams were converted into audio with a vocoder and we visualized the speech continuation in the cochlegram space. We would like to emphasize that the examples are not cherry picked; they are simply the first random generations obtained under a consecutive series of random seeds.</p>
             </div>
 
             <div class="sample-section fade-in">
@@ -135,6 +128,16 @@
                     </video>
                 </div>
             </div>
+
+
+            <div class="figure-section fade-in">
+                <h2>Architecture</h2>
+                <figure>
+                    <img src="media/figures/architecture.png" alt="AuriStream Architecture">
+                </figure>
+            </div>
+
+
         </section>
     </main>
 
