@@ -54,11 +54,12 @@
         <section class="content">
 
             <div class="text-block fade-in">
+                <h2>AuriStream sample generations</h2>
                 <p>We present examples of AuriStream (1B) audio generations. For each example, we prompt AuriStream with the first 2.5 seconds of an audio clip from the LibriSpeech test set (unseen during training), and it predicts the subsequent 2.5 seconds. For comparison, we provide the ground truth (GT) continuations below along with AuriStream's predictions across several random seeds. The predicted cochleagrams were converted into audio with a vocoder and we visualized the speech continuation in the cochlegram space. We would like to emphasize that the examples are not cherry picked; they are simply the first random generations obtained under a consecutive series of random seeds.</p>
             </div>
 
             <div class="sample-section fade-in">
-                <h2>LibriSpeech test - 7021-85628-0020</h2>
+                <h3>LibriSpeech test - 7021-85628-0020</h3>
                 <div class="video-grid">
                     <video controls>
                         <source src="assets/figures/videos/auristream1B_librilight_40pred_model_00130000_7021-85628-0020_flac_rolloutsteps-494_rand-1110_20250219-234433.mp4" type="video/mp4">
@@ -82,7 +83,7 @@
             </div>
 
             <div class="sample-section fade-in">
-                <h2>LibriSpeech test - 237-126133-0000</h2>
+                <h3>LibriSpeech test - 237-126133-0000</h3>
                 <div class="video-grid">
                     <video controls>
                         <source src="assets/figures/videos/auristream1B_librilight_40pred_model_00130000_237-126133-0000_flac_rolloutsteps-494_rand-1110_20250220-090009.mp4" type="video/mp4">
@@ -106,7 +107,7 @@
             </div>
 
             <div class="sample-section fade-in">
-                <h2>TIMIT - SA1</h2>
+                <h3>TIMIT - SA1</h3>
                 <div class="video-grid">
                     <video controls>
                         <source src="assets/figures/videos/auristream1B_librilight_40pred_model_00130000_SA1_WAV_rolloutsteps-494_rand-1110_20250219-134334.mp4" type="video/mp4">
