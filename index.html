@@ -10,7 +10,7 @@
 <body>
     <main>
         <header class="hero">
-            <h1 class="title fade-in">Representing speech through autoregressive prediction of cochlear tokens</h1>
+            <h1 class="title fade-in">AuriStream: Representing speech through autoregressive prediction of cochlear tokens</h1>
             <p class="authors fade-in">Greta Tuckute, Klemen Kotar, Evelina Fedorenko, Dan Yamins</p>
             
             <div class="buttons fade-in">
@@ -147,20 +147,44 @@
             </div>
 
             <div class="text-block fade-in">
-                <h2>Common Failiure Modes</h2>
+                <h3>Common Failiure Modes</h3>
                 <p>
-                    As observed in the examples above, AuriStream can generate fluent continuations of speech, 
-                    but it also exhibits common failure modes. Among these is the generation of some plausible
-                    sounding nonwords in the middle of sentences. Another (less common) failiure mode is the generation
+                    As observed in the examples above, AuriStream learns to generate fluent continuations of sentences (despite its minimal assumptions!).
+                    However, it also exhibits a few (interesting) failure modes. Among these is the generation of some plausible
+                    sounding nonwords in the middle of sentences. Another (less common) failure mode is the generation
                     of a completely nonsensical sound or slurred word, which causes the entire sentence to degenerate.
                 </p>
             </div>
 
             <div class="figure-section fade-in">
                 <h2>Architecture</h2>
+                Schematic of the WavCoch tokenizer (panel A) and the AuriStream model (panel B).
                 <figure>
                     <img src="media/figures/architecture.png" alt="AuriStream Architecture">
                 </figure>
+            </div>
+
+            <div class="figure-section fade-in">
+                <h2>AuriStream learns phoneme identity, word identity, and lexical semantics</h2>
+
+                <figure>
+                    <img src="media/figures/phoneme_word.png" alt="" width="300">
+                </figure>
+
+                <figure>
+                    <img src="media/figures/ssimi.png" alt="" width="300">
+                </figure>
+
+            </div>
+
+            <div class="figure-section fade-in">
+                <h2>AuriStream serves as a strong backbone for downstream audio tasks</h2>
+
+                <figure>
+                    <img src="media/figures/superb.png" alt="" width="300">
+                </figure>
+
+
             </div>
 
         </section>
